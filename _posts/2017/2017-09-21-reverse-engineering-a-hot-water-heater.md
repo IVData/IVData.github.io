@@ -11,7 +11,7 @@ categories:
   - MQTT
 ---
 
-I have a [Rinnai Infinity gas hot water heater]() at home. Rinnai sells controllers that allow you to set the hot water temperature and automatically fill baths, but they're about $250. There are a few things wrong with them though:
+I have a [Rinnai Infinity gas hot water heater](https://rinnai.co.nz/water-heating-gas-hot-water-systems-rinnai-infinity-vt) at home. Rinnai sells controllers that allow you to set the hot water temperature and automatically fill baths, but they're about $250. There are a few things wrong with them though:
 
 - They don't speak MQTT.
 - $250 is too much to pay for a 7-segment display and a microcontroller.
