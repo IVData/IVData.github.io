@@ -22,7 +22,7 @@ The first step involved buying a US controller from eBay (because they're a lot 
 
 The controllers connect to the heater with only two wires, which means the power and data are both sent over only 2 wires. Since the controller can report faults from the heater itself, we also know that the communication is 2-way. I connected up an oscilloscope to check out what was happening on the lines.
 
-![This, turns out](images/2017/09/NewFile2.png)
+![This, turns out](/images/2017/09/NewFile2.png)
 
 The positive wire carries +12V, and a 2.5V p-p AC signal.
 After some disconnecting and reconnecting of the controller I worked out the following:
@@ -38,7 +38,7 @@ So when the controller is connected there are 3x6 bytes at a time to record to s
 
 In the interest of speed I found a pin on the Rinnai controller where the AC signal had already been decoded into a TTL digital signal. I whipped up an arduino sketch to start recording the data using [PulseIn](https://www.arduino.cc/en/Reference/PulseIn) on a digital pin to record the length of pulses, and surprisingly it worked really well off the bat. I used a trick I saw on HackADay to visualise the protocol and help me work out what's going on.
 
-![A temperature sweep](images/2017/09/Untitled.png)
+![A temperature sweep](/images/2017/09/Untitled.png)
 
 The above image shows a sweep through the temperature settings available on the unit. Each row is a single 'packet' of data from the heater. You can see that there is a binary number going up and down around the middle of the image.
 
